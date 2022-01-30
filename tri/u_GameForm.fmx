@@ -1,0 +1,34 @@
+object GameForm: TGameForm
+  Left = 0
+  Top = 0
+  Border.Styling = False
+  BorderIcons = []
+  BorderStyle = None
+  Caption = '3 in line'
+  ClientHeight = 448
+  ClientWidth = 320
+  Fill.Bitmap.WrapMode = Tile
+  Fill.Kind = Bitmap
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Orientations = [Portrait]
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object Timer1: TTimer
+    Interval = 90
+    OnTimer = Timer1Timer
+    Left = 128
+    Top = 328
+  end
+  object MediaPlayer1: TMediaPlayer
+    Left = 192
+    Top = 328
+  end
+  object im1: TImageList
+    Source = <>
+    Destination = <>
+    Left = 176
+    Top = 208
+  end
+end
